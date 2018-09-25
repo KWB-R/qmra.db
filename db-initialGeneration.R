@@ -1,3 +1,6 @@
+### R script for generating initial MS ACCESS DB structure based on Old Ford 
+### public irrigation scenario
+
 devtools::install_github("kwb-r/kwb.qmra")
 devtools::install_github("kwb-r/kwb.db")
 
