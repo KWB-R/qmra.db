@@ -1,6 +1,3 @@
-### R script for generating initial MS ACCESS DB structure based on Old Ford 
-### public irrigation scenario
-
 devtools::install_github("kwb-r/kwb.qmra")
 devtools::install_github("kwb-r/kwb.db")
 
@@ -96,19 +93,29 @@ tbl_treatment_processes <- tbl_processes %>%
   dplyr::mutate(WaterSourceID = ifelse(TreatmentID < 16, 1, 2))
 
 
+# 
+# tbl_inflow <- config$inflow %>% 
+#   dplyr::group_by(PathogenName, PathogenGroup, simulate,  type, value,min,max, mode,  mean,
+#                   sd, meanlog, sdlog, ReferenceName,  ReferenceLink) %>%  
+#   dplyr::summarise(n = n()) %>% 
+#   dplyr::left_join(tbl_references, by = c("ReferenceName", "ReferenceLink")) %>% 
+#   dplyr::left_join(tbl_pathogenGroups) %>% 
+#   dplyr::select(-n) %>% 
+#   dplyr::ungroup() %>% 
+#   dplyr::mutate(WaterSourceID = 2) %>% 
+#   dplyr::select(PathogenGroupID, ReferenceID,  WaterSourceID, min, max)
+
 
 tbl_inflow <- config$inflow %>% 
-  dplyr::group_by(PathogenGroup, simulate,  type, value,min,max, mode,  mean,
-                  sd, meanlog, sdlog, ReferenceName,  ReferenceLink) %>%  
-  dplyr::summarise(n = n()) %>% 
+  dplyr::filter(!is.na(ReferenceName)) %>% 
+  dplyr::select(PathogenName, PathogenGroup, min, max, 
+                ReferenceName,  ReferenceLink) %>% 
   dplyr::left_join(tbl_references, by = c("ReferenceName", "ReferenceLink")) %>% 
-  dplyr::left_join(tbl_pathogenGroups) %>% 
-  dplyr::select(-n) %>% 
-  dplyr::ungroup() %>% 
+  dplyr::left_join(tbl_pathogens) %>% 
   dplyr::mutate(WaterSourceID = 2) %>% 
-  dplyr::select(PathogenGroupID, ReferenceID,  WaterSourceID, min, max)
+  dplyr::select(PathogenID, PathogenGroupID, ReferenceID,  WaterSourceID, min, max)
 
-path_db <- "C:/Users/mrustl.KWB/Documents/RProjects/kwb.qmra.accdb"
+path_db <- "C:/Users/mrustl.KWB/Desktop/QMRA_workflow/kwb.qmra-db/kwb.qmra.accdb"
 
 #file <- "C:/Users/mrustl.KWB/Documents/RProjects/qmra-db.RData"
 #save.image(file = file)
