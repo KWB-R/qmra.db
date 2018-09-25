@@ -1,3 +1,27 @@
+# v0.6
+
+Based on v0.4 after integrating most modifications performed by Patrick in v0.5 but without rename/deletion of 
+currently unneeded pathogens from multiple MS ACCESS tables. 
+
+tbl_pathogenGroup: added a new column “DefaultPathogenID” which contains a default PathogenID (see look-up 
+table "tbl_pathogen") for each pathogen group. Current defaults are: 
+- Viruses: Rotavirus (PathogenID = 32), 
+- Bacteria: Campylobacter(PathogenID = 3) and 
+- Protozoa: Giardia (PathogenID = 36)
+
+- tbl_inflow: added Patrick`s adaptations in DB version v0.5 (but keeping all pathogen names of DB v0.4). 
+In addition set default distribution to "uniform" instead of "lognormal". Reason: implementation of 
+"lognorm" function in R package "kwb.qmra" needs to be re-programmed/tested in order to work properly 
+(current test by myself gives unreasonable results!). Scheduled to be done after GA in Greece by Michael.
+In addition also other distributions requiring "beta" or "alpha" parameters need to be added in the R 
+package.
+- tbl_health: rolled-back to table used in DB version 0.4 (containing all pathogen names)
+- tbl_waterSource: added Patrick`s adaptations of v0.5 (but keeped naming for "sewage, raw", "sewage, treated"
+for consistency reasons)
+- tbl_doseResponse: rolled-back to table used in DB version 0.4 (containing all pathogen names)
+- tbl_exposure: renamed to "tbl_ingestion" as proposed by Patrick
+
+
 # v0.5
 
 Based on v0.4 (changes by Patrick):

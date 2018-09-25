@@ -1,7 +1,7 @@
 "WaterUseID","WaterUseName","WaterUseDescription","events_perYear","litres_perEvent","ReferenceID"
 1,"irrigation, unrestricted",NA,NA,NA,NA
 2,"domestic use, car washing",NA,NA,NA,NA
+7,"irrigation, public",NA,50,0.001,NA
 3,"irrigation, restricted",NA,NA,NA,NA
 4,"domestic use, toilet flushing",NA,1000,1e-05,NA
 5,"drinking water",NA,365,1,NA
-7,"irrigation, public",NA,50,0.001,NA

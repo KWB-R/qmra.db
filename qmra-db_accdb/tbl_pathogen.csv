@@ -1,5 +1,38 @@
 "PathogenID","PathogenName","PathogenDescription","PathogenGroupID"
+1,"Bacillus anthracis",NA,1
+2,"Burkholderia pseudomallei",NA,1
+3,"Campylobacter jejuni",NA,1
+4,"Coxiella burnetii",NA,1
+5,"Escherichia coli enterohemorrhagic (EHEC)",NA,1
 6,"Escherichia coli",NA,1
-38,"Viruses","Viruses are the smallest waterborne pathogens. They cannot replicate themselves, but they are replicated by the human (or animal) they infect. They are generally very host-specific, so generally only human viruses can infect other humans. Well-known waterborne viral diseases are gastroenteritis with symptoms of diarrhoea, vomiting or fever (norovirus), hepatitis A and E (hepatitis virus). Polio appears to have been eradicated since 2012",2
-39,"Bacteria","Bacteria are single-celled organisms. They can replicate very rapidly under favourable conditions. Most pathogenic bacteria replicate only inside infected humans or animals, but some can also replicate outside the host’s body. Bacterial pathogens are not very host-specific. Zoonotic bacteria can infect both animals and humans. Well-known bacterial diseases are typhoid (Salmonella typhi), cholera (Vibrio cholerae), gastroenteritis with symptoms of diarrhoea, vomiting or fever (Campylobacter, E. coli  O157:H7) and dysentery (Shigella). The bacteria E. coli and enterococcus are generally used to monitor water quality by analysis of water samples in a laboratory. These bacteria are present in large numbers in faeces of warm-blooded animals, so detection in the water indicates recent faecal contamination of the water. The organisms themselves are not infectious to humans.",1
-40,"Protozoa","Protozoa are single-celled organisms, slightly larger than most bacteria. They can form (oo)cysts that are very resistant to environmental conditions and to chlorine and other disinfectants. This makes them of special concern. Giardia and Cryptosporidium are protozoa that are known to cause outbreaks of disease even in chlorinated systems. Shedding of the protozoa Cryptosporidium by young calves has been an important cause of water contamination in many cases. Infections with Entamoeba histolytica have also been reported in tropical regions.",3
+7,"Francisella tularensis",NA,1
+8,"Legionella pneumophila",NA,1
+9,"Listeria monocytogenes (Death as response)",NA,1
+10,"Listeria monocytogenes (Infection)",NA,1
+11,"Listeria monocytogenes (Stillbirths)",NA,1
+12,"Mycobacterium avium",NA,1
+13,"Pseudomonas aeruginosa (Contact lens)",NA,1
+14,"Pseudomonas aeruginosa (bacterimia)",NA,1
+15,"Rickettsia rickettsi",NA,1
+16,"Salmonella Typhi",NA,1
+17,"Salmonella anatum",NA,1
+18,"Salmonella meleagridis",NA,1
+19,"Salmonella nontyphoid",NA,1
+20,"Salmonella serotype newport",NA,1
+21,"Shigella",NA,1
+22,"Staphylococcus aureus",NA,1
+23,"Vibrio cholerae",NA,1
+24,"Yersinia pestis",NA,1
+25,"Adenovirus",NA,2
+26,"Echovirus",NA,2
+27,"Enteroviruses",NA,2
+28,"Influenza",NA,2
+29,"Lassa virus",NA,2
+30,"Poliovirus",NA,2
+31,"Rhinovirus",NA,2
+32,"Rotavirus",NA,2
+33,"SARS",NA,2
+34,"Cryptosporidium parvum",NA,3
+35,"Endamoeba coli",NA,3
+36,"Giardia duodenalis",NA,3
+37,"Naegleria fowleri",NA,3

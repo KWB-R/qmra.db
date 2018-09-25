@@ -1,4 +1,7 @@
-QMRA_workflow_detailed_v0.3
+v0.4
+- changed "tbl_exposure" to "tbl_ingestion" as used in MS ACCESS DB v0.5/0.6
+
+v0.3
 
 Integrated adaptations after 2nd telephone call: 
 - Specified selection options for water source, use and guidelines 
