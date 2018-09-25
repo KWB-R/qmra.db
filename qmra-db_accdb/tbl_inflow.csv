@@ -1,8 +1,5 @@
-"PathogenID","ReferenceID","WaterSourceID","min","max"
-3,39,8,100,1e+06
-6,39,8,1000000,1e+10
-23,39,8,100,1e+06
-27,39,8,1,1000
-32,39,8,50,5000
-34,39,8,1,10000
-36,39,8,1,10000
+"PathogenID","ReferenceID","WaterSourceID","min","max","distribution","alpha","beta"
+39,39,8,100,1e+06,"lognormal",10000,100
+6,39,8,1e+06,1e+10,"lognormal",1e+08,100
+40,39,8,1,10000,"lognormal",31.6,31.6
+38,39,8,1,1000,"lognormal",31.6,31.6

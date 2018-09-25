@@ -1,6 +1,4 @@
 "TreatmentID","TreatmentName","TreatmentGroup","TreatmentDescription"
-27,"Ultrafiltration","Filtration",NA
-28,"Nanofiltration","Filtration",NA
 1,"Conventional clarification","Coagulation, flocculation and sedimentation",NA
 2,"Dissolved air flotation","Coagulation, flocculation and sedimentation",NA
 3,"High-rate clarification","Coagulation, flocculation and sedimentation",NA
@@ -32,3 +30,5 @@ Wetlands, surface flow",NA,NA
 25,"UV radiation
 UV","Primary disinfection",NA
 26,"Microfiltration","Filtration",NA
+27,"Ultrafiltration","Filtration",NA
+28,"Nanofiltration","Filtration",NA
