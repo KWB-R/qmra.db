@@ -1,3 +1,12 @@
+# v0.3
+
+Status after internal QA with DB expert Hauke:
+- Improved naming of tables and columns
+- Added referential integrety for table connections
+- Updated DB structure 
+- Updated UI flowchart ("/ui-workflow") and added relevant 
+ACCESS table names for each step
+
 # v0.2
 
 Based on v0.1

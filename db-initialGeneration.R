@@ -1,3 +1,9 @@
+### R script for generating initial MS ACCESS DB structure based on Old Ford 
+### public irrigation scenario
+### (used for generating version v0.1/v0.2 of MS ACCESS DB)
+### NOT REQUIRED FOR LATER VERSIONS oF MS ACCESS DB !!!!!!
+
+if (FALSE) {
 devtools::install_github("kwb-r/kwb.qmra")
 devtools::install_github("kwb-r/kwb.db")
 
@@ -136,4 +142,4 @@ for (table_name in table_names) {
   )
 }
 
-
+}

@@ -1,4 +1,0 @@
-"WaterUseID","WaterUseName","number_of_events_perYear","volume_perEvent_liter","ReferenceID"
-1,"Public irrigation",50,0.001,NA
-3,"Toilet flushing",1000,1e-05,NA
-4,"Potable reuse",365,1,NA

@@ -1,0 +1,34 @@
+"TreatmentID","TreatmentName","TreatmentGroup"
+27,"Ultrafiltration","Filtration"
+28,"Nanofiltration","Filtration"
+1,"Conventional clarification","Coagulation, flocculation and sedimentation"
+2,"Dissolved air flotation","Coagulation, flocculation and sedimentation"
+3,"High-rate clarification","Coagulation, flocculation and sedimentation"
+4,"Lime softening","Coagulation, flocculation and sedimentation"
+5,"Granular high-rate filtration","Filtration"
+6,"Membrane filtration (micro, ultra-, nanofiltration, reverse osmosis)","Filtration"
+7,"Precoat filtration","Filtration"
+8,"Slow sand filtration","Filtration"
+9,"Bank filtration","Pretreatment"
+10,"Roughing filters","Pretreatment"
+11,"Storage reservoirs","Pretreatment"
+12,"Chlorine","Primary disinfection"
+13,"Chlorine dioxide","Primary disinfection"
+14,"Ozone","Primary disinfection"
+15,"UV","Primary disinfection"
+16,"Primary treatment","Pretreatment"
+17,"Secondary treatment","Pretreatment"
+18,"Dual media filtration","Filtration"
+19,"Membrane filtration","Filtration"
+20,"Chlorination","Primary disinfection"
+21,"Reverse osmosis
+os-
+mosis","Filtration"
+22,"Ozonation","Primary disinfection"
+23,"Wetlands, surface flow
+(surface 
+Wetlands, surface flow",NA
+24,"Wetlands, subsurface flow",NA
+25,"UV radiation
+UV","Primary disinfection"
+26,"Microfiltration","Filtration"

@@ -1,0 +1,15 @@
+QMRA_workflow_detailed_v0.3
+
+Integrated adaptations after 2nd telephone call: 
+- Specified selection options for water source, use and guidelines 
+(treatments still need to be defined and haromonised!)
+
+- Added data sources for each step (as defined in "kwb.qmra.v0.3.accdb")
+- Added color "red" for options to be shown in first version of UI
+- Added legend
+
+
+QMRA_workflow_detailed_v0.2
+
+first version on KWR sharepoint (sent as preparatory document 
+for 2nd telefone call)
