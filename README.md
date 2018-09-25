@@ -1,3 +1,9 @@
+# v0.2
+
+Based on v0.1
+- modified "tbl_inflow" with R script "db-scheme-for-kwb-qmra.v0.2.R"
+- slightly modified MS ACCESS tables manually (e.g. defining "key" columns)
+
 # v0.1
 
 MS Access database "qrma-db.accdb" generated with R script "db-initialGeneration.R"
