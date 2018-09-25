@@ -1,0 +1,4 @@
+"PathogenID","Bestfitmodel","k","alpha","N50","Hosttype","Doseunits","Route","Response","ReferenceID"
+39,"beta-Poisson",NA,0.144,890,"human","CFU","oral (in milk)","infection",2
+38,"beta-Poisson",NA,0.253,6.17,"human","FFU","oral","infection",37
+40,"exponential",0.0572,NA,NA,"human","oocysts","oral","infection",26
