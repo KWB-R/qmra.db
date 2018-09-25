@@ -1,3 +1,19 @@
+# v0.4
+
+Based on v0.3
+
+Added new parameter "...Description" in the following tables:
+- tbl_waterSource
+- tbl_pathogen
+- tbl_pathogenGroup
+- tbl_exposure 
+- tbl_guideline
+- tbl_treatment
+
+
+Updated DB structure overview with new parameter
+
+
 # v0.3
 
 Status after internal QA with DB expert Hauke:

@@ -1,4 +1,4 @@
-"PathogenGroupID","PathogenGroup"
-1,"Bacteria"
-2,"Viruses"
-3,"Protozoa"
+"PathogenGroupID","PathogenGroup","PathogenGroupDescription"
+1,"Bacteria",NA
+2,"Viruses",NA
+3,"Protozoa",NA

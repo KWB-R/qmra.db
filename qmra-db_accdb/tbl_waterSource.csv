@@ -1,9 +1,9 @@
-"WaterSourceID","WaterSourceName"
-1,"sewage, treated"
-2,"surface water"
-3,"surface water, contaminated"
-4,"surface water, protected"
-5,"harvesting, rainwater"
-6,"harvesting, stormwater"
-7,"drinking water"
-8,"sewage, raw"
+"WaterSourceID","WaterSourceName","WaterSourceDescription"
+1,"sewage, treated",NA
+2,"surface water",NA
+3,"surface water, contaminated",NA
+4,"surface water, protected",NA
+5,"harvesting, rainwater",NA
+6,"harvesting, stormwater",NA
+7,"drinking water",NA
+8,"sewage, raw",NA
