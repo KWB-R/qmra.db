@@ -1,3 +1,8 @@
+# v0.6.1
+
+tbl_pathogenGroup: reset default PathogenID for protozoa to Cryptosporidium (ParameterID=34) instead of Giardia (ParameterID=36) 
+
+
 # v0.6
 
 Based on v0.4 after integrating most modifications performed by Patrick in v0.5 but without rename/deletion of 
