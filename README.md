@@ -15,13 +15,12 @@ tbl_inflow_181008.xlsx)
 tbl_waterSource
 - renamed WaterSourceID 7 from "drinking water" to "groundwater" and adapted 
 WaterSourceDescription field accordingly
-- added WaterSourceID 9 (domestic use, washing maschine)
 
 tbl_ingestion
 - added data from Patrick`s EXCEL file (Book1.xlsx, renamed by Michael to 
 tbl_ingestion.xlsx)
 - added raw data (used for updating DB) to sub-folder: rawdata/tbl_ingestion.xlsx
-
+- added WaterUseID 9 (-> domestic use, washing maschine)
 
 tbl_inflow: 
 - added data from Patrick`s EXCEL file (tbl_inflow_181008.xlsx)
