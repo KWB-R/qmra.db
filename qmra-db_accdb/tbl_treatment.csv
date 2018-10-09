@@ -1,6 +1,4 @@
 "TreatmentID","TreatmentName","TreatmentGroup","TreatmentDescription"
-27,"Ultrafiltration","Filtration",NA
-28,"Nanofiltration","Filtration",NA
 1,"Conventional clarification","Coagulation, flocculation and sedimentation",NA
 2,"Dissolved air flotation","Coagulation, flocculation and sedimentation",NA
 3,"High-rate clarification","Coagulation, flocculation and sedimentation",NA
@@ -14,8 +12,8 @@
 11,"Storage reservoirs","Pretreatment",NA
 12,"Chlorine","Primary disinfection",NA
 13,"Chlorine dioxide","Primary disinfection",NA
-14,"Ozone","Primary disinfection",NA
-15,"UV","Primary disinfection",NA
+14,"Ozonation, drinking water","Primary disinfection",NA
+15,"UV disinfection, drinking water","Primary disinfection",NA
 16,"Primary treatment","Pretreatment",NA
 17,"Secondary treatment","Pretreatment",NA
 18,"Dual media filtration","Filtration",NA
@@ -24,11 +22,13 @@
 21,"Reverse osmosis
 os-
 mosis","Filtration",NA
-22,"Ozonation","Primary disinfection",NA
+22,"Ozonation, wastewater","Primary disinfection",NA
 23,"Wetlands, surface flow
 (surface 
 Wetlands, surface flow",NA,NA
 24,"Wetlands, subsurface flow",NA,NA
-25,"UV radiation
+25,"UV disinfection, wastewater
 UV","Primary disinfection",NA
 26,"Microfiltration","Filtration",NA
+27,"Ultrafiltration","Filtration",NA
+28,"Nanofiltration","Filtration",NA

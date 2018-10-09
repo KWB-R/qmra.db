@@ -1,7 +1,55 @@
+# v0.7.0
+
+tbl_treatment: renamed treatment processes
+- UV ->  UV disinfection, drinking water
+- UV radiation -> UV disinfection, wastewater
+- Ozone -> Ozonation, drinking water
+- Ozonation -> Ozonation, wastewater
+- deleted TreatmentID 29 (no further entries) 
+
+
+tbl_references: 
+- added data from Patrick`s EXCEL files (tbl_logRemoval_181008.xlsx, 
+tbl_inflow_181008.xlsx) 
+
+tbl_waterSource
+- renamed WaterSourceID 7 from "drinking water" to "groundwater" and adapted 
+WaterSourceDescription field accordingly
+- added WaterSourceID 9 (domestic use, washing maschine)
+
+tbl_ingestion
+- added data from Patrick`s EXCEL file (Book1.xlsx, renamed by Michael to 
+tbl_ingestion.xlsx)
+- added raw data (used for updating DB) to sub-folder: rawdata/tbl_ingestion.xlsx
+
+
+tbl_inflow: 
+- added data from Patrick`s EXCEL file (tbl_inflow_181008.xlsx)
+   + new columns: mean, alpha, beta, distribution, PathogenInReference,	Notes
+   + added only data values for mean, alpha, beta in cases these are either not 
+   to be assumed the same as min/max (i.e. for alpha/beta) or not calcululated
+   i.e. mean = (min+max)/2
+   + distribution: is set to "uniform" (as default)
+- added raw data (used for updating DB) to sub-folder: rawdata/tbl_inflow_181008.xlsx
+
+
+tbl_logRemoval
+- added corrected data (PathogenGroupID!) from Patrick`s EXCEL file 
+  (tbl_logRemoval_181008.xlsx):
+   + new columns: mean, alpha, beta, distribution, Notes
+   + no data values entered for mean, alpha, beta as these are either are always 
+   to be assumed the same as min/max (i.e. alpha/beta) or calculated, i.e. 
+   mean = (min+max)/2
+   + distribution: is set to "uniform" (as default)
+- added raw data (used for updating DB) to sub-folder: rawdata/tbl_logRemoval_181008.xlsx
+- bugfix: corrected wrong ReferenceID for DEMOWARE reference 
+
+
 # v0.6.1
 
 tbl_pathogenGroup: reset default PathogenID for protozoa to Cryptosporidium (ParameterID=34) instead of Giardia (ParameterID=36) 
 
+conversion of ACCESS mdb to mySQL: https://dev.mysql.com/doc/workbench/en/wb-migration-database-access.html
 
 # v0.6
 

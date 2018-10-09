@@ -1,8 +1,29 @@
-"PathogenID","ReferenceID","WaterSourceID","min","max","distribution","alpha","beta"
-3,39,8,100,1e+06,"uniform",10000,100
-6,39,8,1e+06,1e+10,"uniform",1e+08,100
-23,39,8,100,1e+06,NA,NA,NA
-27,39,8,1,1000,NA,NA,NA
-32,39,8,50,5000,"uniform",31.6,31.6
-34,39,8,1,10000,NA,NA,NA
-36,39,8,1,10000,"uniform",31.6,31.6
+"PathogenID","ReferenceID","WaterSourceID","min","max","distribution","mean","alpha","beta","PathogenInReference","Notes"
+6,39,8,1e+06,1e+10,"uniform",NA,NA,NA,NA,NA
+23,39,8,100,1e+06,"uniform",NA,NA,NA,NA,NA
+27,39,8,1,1000,"uniform",NA,NA,NA,NA,NA
+36,39,8,1,10000,"uniform",NA,NA,NA,NA,NA
+32,42,1,0.1,1000,"uniform",16,NA,NA,"enteric viruses","calculated from raw (T3.2)*removal(T5.2)"
+32,39,2,0.01,100,"uniform",NA,NA,NA,"Rota",NA
+32,43,3,30,60,"uniform",NA,NA,NA,"enteric viruses","""High detectable concentration""""Impaced rivers and streames"""
+32,43,4,0,3,"uniform",NA,NA,NA,"viruses"," ""High detectable concentration""""Wilderness rivers and streams"" "
+32,44,5,0,0.01,"uniform",NA,NA,NA,"viruses","Collected from several literature in this report (min set to zero)"
+32,45,6,9.74510658007135,64.7460691472062,"uniform",25.1188643150958,NA,NA,"norovirus","entered 5% and 95% of the lognormal distribution"
+32,39,8,50,5000,"uniform",NA,NA,NA,"Rota",NA
+32,43,7,0,2,"uniform",NA,NA,NA,"viruses",NA
+3,42,1,0.001,1000,"uniform",3,NA,NA,"Campylobacter","calculated from raw (T3.2)*removal(T5.2)"
+3,39,2,100,10000,"uniform",NA,NA,NA,"Campylobacter",NA
+3,43,3,90,2500,"uniform",NA,NA,NA,"Campylobacter","""High detectable concentration""""Impaced rivers and streames"""
+3,43,4,0,1100,"uniform",NA,NA,NA,"Campylobacter"," ""High detectable concentration""""Wilderness rivers and streams"" "
+3,44,5,0,24,"uniform",3,NA,NA,"Campylobacter","Collected from several literature in this report (min set to zero)"
+3,45,6,13.8694279635122,287.039358509118,"uniform",63.0957344480194,NA,NA,"Campylobacter","entered 5% and 95% of the lognormal distribution"
+3,39,8,100,1e+06,"uniform",NA,NA,NA,"Campylobacter",NA
+3,43,7,0,10,"uniform",NA,NA,NA,"Campylobacter",NA
+34,42,1,0.01,10000,"uniform",32,NA,NA,"Cryptosporidium","calculated from raw (T3.2)*removal(T5.2)"
+34,39,2,0,1000,"uniform",NA,NA,NA,"Cryptosporidium",NA
+34,43,3,2,480,"uniform",NA,NA,NA,"Cryptosporidium","""High detectable concentration""""Impaced rivers and streames"""
+34,43,4,2,240,"uniform",NA,NA,NA,"Cryptosporidium"," ""High detectable concentration""""Wilderness rivers and streams"" "
+34,44,5,0,0.19,"uniform",0.06,NA,NA,"Cryptosporidium","Collected from several literature in this report (min set to zero)"
+34,45,6,4.52008261942372e-05,0.0880751977503127,"uniform",0.00199526231496888,NA,NA,"Cryptosporidium","entered 5% and 95% of the lognormal distribution"
+34,39,8,1,10000,"uniform",NA,NA,NA,"Cryptosporidium",NA
+34,43,7,0,1,"uniform",NA,NA,NA,"Cryptosporidium",NA
