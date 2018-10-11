@@ -1,19 +1,28 @@
 "TreatmentID","TreatmentName","TreatmentGroup","TreatmentDescription"
-1,"Conventional clarification","Coagulation, flocculation and sedimentation",NA
-2,"Dissolved air flotation","Coagulation, flocculation and sedimentation",NA
-3,"High-rate clarification","Coagulation, flocculation and sedimentation",NA
-4,"Lime softening","Coagulation, flocculation and sedimentation",NA
-5,"Granular high-rate filtration","Filtration",NA
-6,"Membrane filtration (micro, ultra-, nanofiltration, reverse osmosis)","Filtration",NA
-7,"Precoat filtration","Filtration",NA
-8,"Slow sand filtration","Filtration",NA
-9,"Bank filtration","Pretreatment",NA
-10,"Roughing filters","Pretreatment",NA
-11,"Storage reservoirs","Pretreatment",NA
-12,"Chlorine","Primary disinfection",NA
+1,"Conventional clarification","Coagulation, flocculation and sedimentation","Depends on coagulation conditions"
+2,"Dissolved air flotation","Coagulation, flocculation and sedimentation","Depends on coagulant dose"
+3,"High-rate clarification","Coagulation, flocculation and sedimentation","Depends on use of appropriate
+blanket polymer"
+4,"Lime softening","Coagulation, flocculation and sedimentation","Depends on pH and settling time"
+5,"Granular high-rate filtration","Filtration","Depends on filter media and coagulation pretreatment; filtered water turbidity of ? 0.3 NTU in 95% of
+samples (and none to exceed 1 NTU)
+associated with 1–2 log reduction
+of viruses and 3 log reduction of
+Cryptosporidiuma"
+7,"Precoat filtration","Filtration","If filter cake is present. Depends on chemical pretreatment,  media grade and filtration
+rate"
+8,"Slow sand filtration","Filtration","Depends on presence of schmutzdecke, grain size, flow rate, operating conditions (mainly temperature, pH); filtered water turbidity of ? 1NTU in 95% of samples (and none to exceed 5 NTU)
+associated with 1–2 log reduction of viruses and 2.5–3 log reduction of Cryptosporidiuma"
+9,"Bank filtration","Pretreatment","Depends on travel distance, soil type,
+pumping rate, pH, ionic strength"
+10,"Roughing filters","Pretreatment","Depends on filter medium, coagulant"
+11,"Storage reservoirs","Pretreatment","Residence time > 40 days (bacteria), 160 days (protozoa)"
+12,"Chlorine","Primary disinfection","Free chlorine × contact time predicts efficacy; not effective against Cryptosporidium oocysts. Turbidity and chlorine-demanding solutes inhibit this process; hence, turbidity should be kept below 1 NTU to support
+effective disinfection. Where this is not practical, turbidities should be kept below 5 NTU with higher chlorine doses or contact times. In addition to initial disinfection, the benefits of maintaining free chlorine residuals throughout distribution systems at or above 0.2 mg/l should be considered"
 13,"Chlorine dioxide","Primary disinfection",NA
-14,"Ozonation, drinking water","Primary disinfection",NA
-15,"UV disinfection, drinking water","Primary disinfection",NA
+14,"Ozonation, drinking water","Primary disinfection","Viruses generally more resistant than bacteria. Protozoa: depends on temperature;
+Cryptosporidium varies widely"
+15,"UV disinfection, drinking water","Primary disinfection","Effectiveness of disinfection depends on delivered fluence (dose), which varies with intensity, exposure time and UV wavelength. Excessive turbidity and certain dissolved species inhibit this process; hence, turbidity should be kept below 1 NTU to support effective disinfection. Where this is not practical, turbidities should be kept below 5 NTU with higher fluences"
 16,"Primary treatment","Pretreatment",NA
 17,"Secondary treatment","Pretreatment",NA
 18,"Dual media filtration","Filtration",NA
@@ -25,8 +34,8 @@ mosis","Filtration",NA
 22,"Ozonation, wastewater","Primary disinfection",NA
 23,"Wetlands, surface flow
 (surface 
-Wetlands, surface flow",NA,NA
-24,"Wetlands, subsurface flow",NA,NA
+Wetlands, surface flow","Wetlands",NA
+24,"Wetlands, subsurface flow","Wetlands",NA
 25,"UV disinfection, wastewater
 UV","Primary disinfection",NA
 26,"Microfiltration","Filtration",NA

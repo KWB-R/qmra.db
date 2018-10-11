@@ -1,3 +1,13 @@
+# v0.7.1
+
+tbl_treatment: 
+- added TreatmentGroup "Wetland" 
+- added TreatmentDescription" (from WHO 2017: http://www.who.int/water_sanitation_health/publications/drinking-water-quality-guidelines-4-including-1st-addendum/en/)
+- deleted TreatmentID 6 -> "Membrane filtration (micro, ultra-, nanofiltration, reverse osmosis)"
+
+tbl_logRemoval
+- deleted entries for TreatmentID 6 from WHO (2011)
+
 # v0.7.0
 
 tbl_treatment: renamed treatment processes
