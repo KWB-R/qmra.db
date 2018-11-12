@@ -1,3 +1,17 @@
+# v0.8.0
+"rawdata" folder: 
+- added Patrick's changes made in EXCEL files "tbl_logremoval.xlsx" and "tbl_treatment.xlsx"(sent to Michael on 
+2018-11-08 via email) in "rawdata" folder
+
+tbl_treatment: 
+- added TreatmentDescription: from Patrick's "tbl_logremoval.xlsx" (sent on 2018-11-08 via email)
+- renamed/added TreatmentNames: UV disinfection 20 mJ/cm2, drinking and UV disinfection 40 mJ/cm2, drinking
+
+tbl_logRemoval
+- deleted entries for TreatmentID 15 (RO) from WHO (2011) (Reference: 8), now default RO data are based on 
+NSF/ANSI 419  validation (referenceID = 47)
+
+
 # v0.7.1
 
 tbl_treatment: 
