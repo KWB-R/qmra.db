@@ -1,0 +1,37 @@
+Package: qmra.db
+Title: Database Backend for AQUANES QMRA Webapp
+Version: 0.9.0
+Authors@R: 
+    c(person(given = "Michael",
+             family = "Rustler",
+             role = c("aut", "cre"),
+             email = "michael.rustler@kompetenz-wasser.de",
+             comment = c(ORCID = "0000-0001-9134-2871")),
+      person(given = "Patrick",
+             family = "Smeets",
+             role = c("aut", "rev"),
+             email = "patrick.smeets@kwrwater.nl",
+             comment = c(ORCID = "0000-0002-6442-9581")),
+      person(given = "Wolfgang",
+             family = "Seis",
+             role = c("ctb", "rev"),
+             email = "wolfgang.seis@kompetenz-wasser.de",
+             comment = c(ORCID = "0000-0002-7436-8575")),
+      person(given = "Kompetenzzentrum Wasser Berlin gGmbH (KWB)",
+             role = "cph"),
+      person(given = "AquaNES",
+             role = "fnd"))
+Description: This package contains functions for exporting
+    tables of MS ACCESS database into .cSv files
+License: MIT + file LICENSE
+URL: https://github.com/KWB-R/qmra.db
+BugReports: https://github.com/KWB-R/qmra.db/issues
+Imports: 
+    kwb.db
+Suggests: 
+    covr
+Remotes: 
+    github::kwb-r/kwb.db
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
