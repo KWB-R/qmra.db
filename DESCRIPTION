@@ -22,16 +22,18 @@ Authors@R:
       person(given = "AquaNES",
              role = "fnd"))
 Description: This package contains functions for exporting
-    tables of MS ACCESS database into .cSv files
+    tables of MS ACCESS database into .csv files.
 License: MIT + file LICENSE
 URL: https://github.com/KWB-R/qmra.db
 BugReports: https://github.com/KWB-R/qmra.db/issues
 Imports: 
-    kwb.db
+    kwb.db, 
+    kwb.utils
 Suggests: 
     covr
 Remotes: 
-    github::kwb-r/kwb.db
+    github::kwb-r/kwb.db,
+    github::kwb-r/kwb.utils
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
