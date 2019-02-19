@@ -2,18 +2,28 @@
 
 **BREAKING CHANGES**: ***due to converting repo as R package***
 
-Moved from / into /inst directory (required for R Package):
+Moved from [/](https://github.com/KWB-R/qmra.db/tree/master/) into [/inst](https://github.com/KWB-R/qmra.db/tree/master/inst) 
+directory (required for R Package):
 
 * MS ACCESS database (qmra-db_accdb), 
 
-* folder: qmra-db_accdb (exported MS ACCESS content as .csv)
+* folder: [qmra-db_accdb](https://github.com/KWB-R/qmra.db/tree/master/inst/qmra-db_accdb) 
+(exported MS ACCESS content as .csv)
 
-* folder: "rawdata" (Excel files received from @PatrickSmeetsKWR and imported into MS ACCESS DB by @mrustl), see NEWS entries of prior qmra.db releases
+* folder: [rawdata](https://github.com/KWB-R/qmra.db/tree/master/inst/rawdata)  (Excel files received from @PatrickSmeetsKWR and imported into MS ACCESS DB by @mrustl), see NEWS entries of prior qmra.db releases
+
+* folder: [ui-workflow](https://github.com/KWB-R/qmra.db/tree/master/inst/ui-workflow)  
+(flowchart related to development of QMRA webapp user interface by @mrustl)
 
 
-Moved "db-initialGeneration.R" from into "data-raw" directory
+R files: 
 
-Moved R files from / into /R directory
+* Moved "db-initialGeneration.R" from [/](https://github.com/KWB-R/qmra.db/tree/master/) into [data-raw](https://github.com/KWB-R/qmra.db/tree/master/data-raw) folder
+
+
+* Moved "db-export.R" from [/](https://github.com/KWB-R/qmra.db/tree/master/) into [R](https://github.com/KWB-R/qmra.db/tree/master/data-raw) folder. In addition 
+added Rscript [.init_package.R](https://github.com/KWB-R/qmra.db/commit/dde0576ab57575135a1e16a81f752bf1bce05d98#diff-990bb284e3185198984dba48ab42ba2e)" describing workflow for preparing this 
+R package.
 
 
 tbl_inflow: 
