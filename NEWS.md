@@ -5,7 +5,7 @@
 Moved from [/](https://github.com/KWB-R/qmra.db/tree/master/) into [/inst](https://github.com/KWB-R/qmra.db/tree/master/inst) 
 directory (required for R Package):
 
-* MS ACCESS database (qmra-db_accdb), 
+* MS ACCESS database ([qmra-db.accdb](https://github.com/KWB-R/qmra.db/tree/master/inst)), 
 
 * folder: [qmra-db_accdb](https://github.com/KWB-R/qmra.db/tree/master/inst/qmra-db_accdb) 
 (exported MS ACCESS content as .csv)
