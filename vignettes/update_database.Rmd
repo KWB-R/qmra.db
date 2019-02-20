@@ -177,8 +177,8 @@ C:\Users\<yourusername>\Documents\R\win-library\3.5\qmra.db\database\qmra-db.zip
 In case that changes are suggested for the MS ACCESS database the following 
 workflow is proposed: 
 
-- Create a new issue on GitHub at https://github.com/qmra.da/issue with a title 
-starting with **Database Update: <short_description_of_my_changes** 
+- Create a new issue on GitHub at https://github.com/qmra.db/issue with a title 
+starting with **Database Update: <short_description_of_my_changes>** 
 
 - **Upload** the `qmra-db.zip` file (by dragging into the **Comment** field) and 
 
@@ -188,10 +188,9 @@ starting with **Database Update: <short_description_of_my_changes**
 Thank you very much for your suggestions! These will be reviewed by our QMRA 
 experts: 
 
-- [Patrick Smeets](https://www.kwrwater.nl/en/experts-expertises/experts/patrick-smeets/) 
-(@PatrickSmeetsKWR) from ([KWR Watercycle Research Institute (KWR)](https://www.kwrwater.nl)) 
+- [Patrick Smeets](https://www.kwrwater.nl/en/experts-expertises/experts/patrick-smeets/) from [KWR Watercycle Research Institute (KWR)](https://www.kwrwater.nl): @PatrickSmeetsKWR 
 
-- [Wolfgang Seis](https://www.kompetenz-wasser.de/en/ueber-uns/team/?search-employee-grid=Wolfgang%20Seis) (@wseis) ([Kompetenzzentrum Wasser Berlin gGmbH (KWB)](https://kompetenz-wasser.de))
+- [Wolfgang Seis](https://www.kompetenz-wasser.de/en/ueber-uns/team/?search-employee-grid=Wolfgang%20Seis) from [Kompetenzzentrum Wasser Berlin gGmbH (KWB)](https://kompetenz-wasser.de): @wseis
 
 
 

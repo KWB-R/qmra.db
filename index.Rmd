@@ -4,14 +4,29 @@
 [![Project Status](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/qmra.db)]()
 
-This package contains the MS ACCESS database, which is used as for performing 
-performing quantitative microbial risk QMRA backend for the 
-QMRA web app used for  functions for exporting 
-used for the  into .csv files
+This package contains a MS ACCESS database, which is used for performing 
+quantitative microbial risk assessment (QMRA) within the [AquaNES](https://www.kompetenz-wasser.de/en/project/aquanes-prozesskombinationen-fuer-die-wasseraufbereitung/) project. 
+
+The database was wrapped into an R package for adding the following features: 
 
 
-For more details on the workflow for **[Updating the Database](articles/update_database.html)** have a 
-look at the **[tutorial](articles/update_database.html)** 
+- **Database Export** with R functions and 
+
+- **Documention** is generated automatically with R package [pkgdown](https://pkgdown.r-lib.org/) and deployed to GitLab/GitHub and provides
+information on the following topics:
+
+    + [Update Database Workflow](articles/update_database.html): how to add data into the 
+    database? How to export these? And how can these modifications be proposed
+    to the database maintainers?
+    
+    + [NEWS](news.html): for keeping track what has changed (database / R functions)
+    and 
+    
+    + [References](references.html): an help page describing the R functions 
+    implemented in this R package more technically
+    
+    
+
 
 
 

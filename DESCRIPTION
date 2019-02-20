@@ -1,5 +1,6 @@
 Package: qmra.db
-Title: Database Backend for AQUANES QMRA Webapp
+Title: Database Backend for Quantitative Microbiological Risk
+    Assessment (QMRA) within AquaNES project
 Version: 0.9.0
 Authors@R: 
     c(person(given = "Michael",
@@ -23,8 +24,11 @@ Authors@R:
              role = "cph"),
       person(given = "AquaNES",
              role = "fnd"))
-Description: This package contains functions for exporting
-    tables of MS ACCESS database into .csv files.
+Description: This package contains a MS ACCESS database
+    with data required for performing Quantitative Microbiological Risk
+    Assessment (QMRA). In addition it provides also R functions for
+    exporting these data into .csv files or a single ZIP file (together
+    with the MS Access database)
 License: MIT + file LICENSE
 URL: https://github.com/KWB-R/qmra.db
 BugReports: https://github.com/KWB-R/qmra.db/issues

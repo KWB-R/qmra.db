@@ -23,3 +23,28 @@ template:
 development:
   mode: auto
 
+navbar:
+  title: ~
+  type: default
+  left:
+  - text: Update Database
+    href: articles/update_database.html
+  - text: News
+    href: news/index.html
+  - text: Reference
+    href: reference/index.html
+
+reference:
+  - title: MS ACCESS Database Export
+    desc: >
+      Functions for exporting MS ACCESS DB into csv files or 
+      saving both (DB and csv files) into one ZIP file
+    contents: 
+      - create_zipfile
+      - dump_access_db
+
+  - title: Helper Functions
+    desc: >
+      Functions for defining default directories
+    contents:
+      - starts_with("default_")

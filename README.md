@@ -1,7 +1,7 @@
 [![Appveyor build Status](https://ci.appveyor.com/api/projects/status/github/KWB-R/qmra.db?branch=master&svg=true)](https://ci.appveyor.com/project/KWB-R/qmra-db/branch/master)
 [![Travis build Status](https://travis-ci.org/KWB-R/qmra.db.svg?branch=master)](https://travis-ci.org/KWB-R/qmra.db)
 [![codecov](https://codecov.io/github/KWB-R/qmra.db/branch/master/graphs/badge.svg)](https://codecov.io/github/KWB-R/qmra.db)
-[![Project Status](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Project Status](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/qmra.db)]()
 
 # qmra.db
