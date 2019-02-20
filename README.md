@@ -12,8 +12,26 @@ tables of MS ACCESS database into .csv files.
 ## Installation
 
 ```r
-#install.packages("remotes", repos = "https://cloud.r-project.org")
-remotes::install_github("KWB-R/qmra.db")
+###############################################################################
+### 1 Install R Package Downloading and Installing from GitHub
+###############################################################################
+
+install.packages("remotes", repos = "https://cloud.r-project.org")
+
+#Sys.setenv(GITHUB_PAT = "mysecret_access_token")
+remotes::install_github("r-lib/remotes@18c7302637053faf21c5b025e1e9243962db1bdc")
+
+###############################################################################
+### 2 Install R Package qmra.db (with ACCESS DB)
+###############################################################################
+
+### 2.1 Specific Release ACCESS DB from our GitHub account, e.g.
+
+#remotes::install_github("kwb-r/qmra.db@0.9.0")
+
+### 2.2 the Latest Development Version 
+
+remotes::install_github("kwb-r/qmra.db")  
 ```
 
 ## Documentation

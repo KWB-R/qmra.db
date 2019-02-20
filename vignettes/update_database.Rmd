@@ -1,0 +1,136 @@
+---
+title: "Workflow: Update Database"
+author: "Michael Rustler"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Workflow: Update Database}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+```
+
+
+# Installation
+
+```{r installation, eval=FALSE}
+###############################################################################
+### 1 Install R Package Downloading and Installing from GitHub
+###############################################################################
+
+install.packages("remotes", repos = "https://cloud.r-project.org")
+
+#Sys.setenv(GITHUB_PAT = "mysecret_access_token")
+remotes::install_github("r-lib/remotes@18c7302637053faf21c5b025e1e9243962db1bdc")
+
+###############################################################################
+### 2 Install R Package qmra.db (with ACCESS DB)
+###############################################################################
+
+### 2.1 Specific Release ACCESS DB from our GitHub account, e.g.
+
+#remotes::install_github("kwb-r/qmra.db@0.9.0")
+
+### 2.2 the Latest Development Version 
+
+remotes::install_github("kwb-r/qmra.db") 
+
+```
+
+
+# Update Database 
+
+
+## Where to find it ?
+
+Run the following command to find out the path to the MS ACCESS Database:
+
+```{r database_find, eval=TRUE}
+mdb_path <- normalizePath(system.file("database/qmra-db.accdb", 
+                                      package = "qmra.db"))
+mdb_path
+```
+
+## Have a look at the database structure 
+
+```{r database_structure, eval=TRUE, echo = FALSE, fig.width = 8, fig.height=7, fig.cap='Screenshot of MS ACCESS Database Structure (might be out of date!)'}
+
+figure_db_structure <- system.file("database/qmra-db_structure.jpg", 
+                                   package = "qmra.db")
+
+knitr::include_graphics(figure_db_structure)
+
+
+```
+
+
+## Make changes
+
+For making changes in the MS ACCESS database the following workflow should be 
+followed: 
+
+- Open `r mdb_path` with MS ACCESS, 
+
+- Add your changes and finally 
+
+- Save it under the same path `r mdb_path` (by overwriting the old one!)  
+
+
+## Dump Content in CSV files 
+
+Finally please run following R code in order to export the whole content: 
+
+```{r database_export_csvfiles, eval=FALSE}
+
+qmra.db::dump_access_db(mdb_path)
+
+```
+
+## Create ZIP File 
+
+Create a zip file `qmra-db.zip` with the following content: 
+
+- Modified MS ACCESS DB (**qmra-db.accdb**) and 
+
+- Csv files with the whole content of this database (automatically stored in 
+subdirectory **qmra-db_accdb/**) 
+
+
+
+```{r database_export_zipfile, eval=FALSE}
+
+zip_path <- create_zipfile(mdb_path)
+cat(zip_path)
+
+```
+
+## Suggest Your Changes on GitHub 
+
+In case that changes are suggested for the MS ACCESS database the following 
+workflow is proposed: 
+
+- Create a new issue on GitHub at https://github.com/qmra.da/issue with a title 
+starting with **Database Update: <short_description_of_my_changes** 
+
+- Upload the `qmra-db.zip` file and 
+
+- At best provide there some more explainations
+
+
+Thanks for your suggestions. These will be reviewed by our QMRA experts: 
+
+- [Patrick Smeets](https://www.kwrwater.nl/en/experts-expertises/experts/patrick-smeets/) 
+(@PatrickSmeetsKWR) from ([KWR Watercycle Research Institute (KWR)](https://www.kwrwater.nl)) 
+
+- [Wolfgang Seis](https://www.kompetenz-wasser.de/en/ueber-uns/team/?search-employee-grid=Wolfgang%20Seis) (@wseis) ([Kompetenzzentrum Wasser Berlin gGmbH (KWB)](https://kompetenz-wasser.de))
+
+
+
+

@@ -4,12 +4,14 @@
 [![Project Status](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/qmra.db)]()
 
-This package contains functions for exporting
-tables of MS ACCESS database into .csv files
+This package contains the MS ACCESS database, which is used as for performing 
+performing quantitative microbial risk QMRA backend for the 
+QMRA web app used for  functions for exporting 
+used for the  into .csv files
 
-## Installation
 
-```{r echo = TRUE, eval = FALSE}
-#install.packages("remotes", repos = "https://cloud.r-project.org")
-remotes::install_github("KWB-R/qmra.db")
-```
+For more details on the workflow for **[Updating the Database](articles/update-database.html)** have a 
+look at the **[tutorial](articles/update-database.html)** 
+
+
+

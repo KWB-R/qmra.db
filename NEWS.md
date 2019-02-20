@@ -2,17 +2,18 @@
 
 **BREAKING CHANGES**: ***due to converting repo as R package***
 
-Moved from [/](https://github.com/KWB-R/qmra.db/tree/master/) into [/inst](https://github.com/KWB-R/qmra.db/tree/master/inst) 
-directory (required for R Package):
+Moved from [/](https://github.com/KWB-R/qmra.db/tree/master/) into 
+[/inst/database](https://github.com/KWB-R/qmra.db/tree/master/inst) directory 
+(required for R Package):
 
-* MS ACCESS database ([qmra-db.accdb](https://github.com/KWB-R/qmra.db/tree/master/inst)), 
+* MS ACCESS database ([qmra-db.accdb](https://github.com/KWB-R/qmra.db/tree/master/inst/database)), 
 
-* folder: [qmra-db_accdb](https://github.com/KWB-R/qmra.db/tree/master/inst/qmra-db_accdb) 
+* folder: [qmra-db_accdb](https://github.com/KWB-R/qmra.db/tree/master/inst/database/qmra-db_accdb) 
 (exported MS ACCESS content as .csv)
 
-* folder: [rawdata](https://github.com/KWB-R/qmra.db/tree/master/inst/rawdata)  (Excel files received from @PatrickSmeetsKWR and imported into MS ACCESS DB by @mrustl), see NEWS entries of prior qmra.db releases
+* folder: [rawdata](https://github.com/KWB-R/qmra.db/tree/master/inst/database/rawdata)  (Excel files received from @PatrickSmeetsKWR and imported into MS ACCESS DB by @mrustl), see NEWS entries of prior qmra.db releases
 
-* folder: [ui-workflow](https://github.com/KWB-R/qmra.db/tree/master/inst/ui-workflow)  
+* folder: [ui-workflow](https://github.com/KWB-R/qmra.db/tree/master/inst/database/ui-workflow)  
 (flowchart related to development of QMRA webapp user interface by @mrustl)
 
 

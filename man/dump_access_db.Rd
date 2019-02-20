@@ -2,12 +2,21 @@
 % Please edit documentation in R/db-export.R
 \name{dump_access_db}
 \alias{dump_access_db}
-\title{Dump MS ACCESS Database To CSV}
+\title{Dump MS ACCESS Database To Csv Files}
 \usage{
-dump_access_db(db_path = default_access_db())
+dump_access_db(db_path = default_access_db(),
+  target_dir = default_target_dir(db_path), dbg = TRUE, ...)
 }
 \arguments{
-\item{db_path}{path to MS Access DB (default: deufault_access_db())}
+\item{db_path}{path to MS Access DB (default: default_access_db())}
+
+\item{target_dir}{directory. By default a new directory is created in the same 
+directory as mdb resides in. The new directory has the same name as the 
+database file with dots substituted with underscores (default: default_target_dir())}
+
+\item{dbg}{debug information (default: TRUE)}
+
+\item{...}{additional arguments passed to kwb.db::dumpDatabase()}
 }
 \description{
 for exporting tables and queries from MS ACCESS DB into 
