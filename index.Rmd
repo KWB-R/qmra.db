@@ -10,8 +10,8 @@ QMRA web app used for  functions for exporting
 used for the  into .csv files
 
 
-For more details on the workflow for **[Updating the Database](articles/update-database.html)** have a 
-look at the **[tutorial](articles/update-database.html)** 
+For more details on the workflow for **[Updating the Database](articles/update_database.html)** have a 
+look at the **[tutorial](articles/update_database.html)** 
 
 
 

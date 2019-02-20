@@ -19,6 +19,8 @@ Authors@R:
              comment = c(ORCID = "0000-0002-7436-8575")),
       person(given = "Kompetenzzentrum Wasser Berlin gGmbH (KWB)",
              role = "cph"),
+      person(given = "KWR Watercycle Research Institute (KWR)",
+             role = "cph"),
       person(given = "AquaNES",
              role = "fnd"))
 Description: This package contains functions for exporting
@@ -27,8 +29,8 @@ License: MIT + file LICENSE
 URL: https://github.com/KWB-R/qmra.db
 BugReports: https://github.com/KWB-R/qmra.db/issues
 Imports: 
-    fs, 
-    kwb.db, 
+    fs,
+    kwb.db,
     kwb.utils,
     stringr,
     withr,
@@ -37,10 +39,11 @@ Suggests:
     covr,
     knitr,
     rmarkdown
+VignetteBuilder: 
+    knitr
 Remotes: 
     github::kwb-r/kwb.db,
     github::kwb-r/kwb.utils
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
-VignetteBuilder: knitr

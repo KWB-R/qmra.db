@@ -60,15 +60,19 @@ mdb_path
 
 ## Have a look at the database structure 
 
-```{r database_structure, eval=TRUE, echo = FALSE, fig.width = 8, fig.height=7, fig.cap='Screenshot of MS ACCESS Database Structure (might be out of date!)'}
+```{r database_structure, eval=TRUE, echo = FALSE, asis = TRUE}
 
 figure_db_structure <- system.file("database/qmra-db_structure.jpg", 
                                    package = "qmra.db")
 
-knitr::include_graphics(figure_db_structure)
+fs::file_copy(figure_db_structure, 
+              new_path = "qmra-db_structure.jpg", 
+              overwrite = TRUE)
+
 
 
 ```
+![Fig. 1: Screenshot of MS ACCESS Database Structure (might be out of date!)](qmra-db_structure.jpg)
 
 
 ## Make changes
@@ -76,18 +80,18 @@ knitr::include_graphics(figure_db_structure)
 For making changes in the MS ACCESS database the following workflow should be 
 followed: 
 
-- Open `r mdb_path` with MS ACCESS, 
+- Open ``r mdb_path`` with MS ACCESS, 
 
 - Add your changes and finally 
 
-- Save it under the same path `r mdb_path` (by overwriting the old one!)  
+- Save it under the same path ``r mdb_path`` (by overwriting the old one!)  
 
 
 ## Dump Content in CSV files 
 
 Finally please run following R code in order to export the whole content: 
 
-```{r database_export_csvfiles, eval=FALSE}
+```{r database_export_csvfiles, eval=TRUE}
 
 qmra.db::dump_access_db(mdb_path)
 
@@ -104,9 +108,9 @@ subdirectory **qmra-db_accdb/**)
 
 
 
-```{r database_export_zipfile, eval=FALSE}
+```{r database_export_zipfile, eval=TRUE}
 
-zip_path <- create_zipfile(mdb_path)
+zip_path <- qmra.db::create_zipfile(mdb_path)
 cat(zip_path)
 
 ```
@@ -119,12 +123,13 @@ workflow is proposed:
 - Create a new issue on GitHub at https://github.com/qmra.da/issue with a title 
 starting with **Database Update: <short_description_of_my_changes** 
 
-- Upload the `qmra-db.zip` file and 
+- **Upload** the `qmra-db.zip` file (by dragging into the **Comment** field) and 
 
-- At best provide there some more explainations
+- Provide more detailed explainations in the **Comment** field
 
 
-Thanks for your suggestions. These will be reviewed by our QMRA experts: 
+Thank you very much for your suggestions! These will be reviewed by our QMRA 
+experts: 
 
 - [Patrick Smeets](https://www.kwrwater.nl/en/experts-expertises/experts/patrick-smeets/) 
 (@PatrickSmeetsKWR) from ([KWR Watercycle Research Institute (KWR)](https://www.kwrwater.nl)) 

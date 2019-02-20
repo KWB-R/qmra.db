@@ -4,10 +4,14 @@ authors:
   Patrick Smeets: 
     href: https://www.kwrwater.nl/en/experts-expertises/experts/patrick-smeets/
   Wolfgang Seis:
-    href: https://www.researchgate.net/profile/Wolfgang_Seis
+    href: https://www.kompetenz-wasser.de/en/ueber-uns/team/?search-employee-grid=Wolfgang%20Seis
   Kompetenzzentrum Wasser Berlin gGmbH (KWB):
     href: https://www.kompetenz-wasser.de
-    html: <img src='https://www.kompetenz-wasser.de/wp-content/uploads/2017/08/cropped-logo-kwb_klein-new.png'
+    html: <img src='https://www.kompetenz-wasser.de/wp-content/uploads/2017/08/cropped-logo-kwb_klein-new.png' 
+      height='24' />
+  KWR Watercycle Research Institute (KWR):
+    href: https://www.kwrwater.nl/
+    html: <img src='https://www.kwrwater.nl/wp-content/uploads/2018/09/KWR_logo_SVG.svg' 
       height='24' />
   AquaNES: 
     href: http://aquanes.eu/Default.aspx?t=1593
