@@ -52,10 +52,13 @@ remotes::install_github("kwb-r/qmra.db")
 
 Run the following command to find out the path to the MS ACCESS Database:
 
-```{r database_find, eval=TRUE}
+```{r database_find, eval=FALSE}
 mdb_path <- normalizePath(system.file("database/qmra-db.accdb", 
                                       package = "qmra.db"))
 mdb_path
+```
+```{r eval = FALSE}
+[1] "C:\\Users\\<yourusername>\\Documents\\R\\win-library\\3.5\\qmra.db\\database\\qmra-db.accdb"
 ```
 
 ## Have a look at the database structure 
@@ -72,6 +75,7 @@ fs::file_copy(figure_db_structure,
 
 
 ```
+
 ![Fig. 1: Screenshot of MS ACCESS Database Structure (might be out of date!)](qmra-db_structure.jpg)
 
 
@@ -80,23 +84,73 @@ fs::file_copy(figure_db_structure,
 For making changes in the MS ACCESS database the following workflow should be 
 followed: 
 
-- Open ``r mdb_path`` with MS ACCESS, 
+- Open `C:\Users\<yourusername>\Documents\R\win-library\3.5\qmra.db\database\qmra-db.accb` with MS ACCESS, 
 
 - Add your changes and finally 
 
-- Save it under the same path ``r mdb_path`` (by overwriting the old one!)  
+- Save it under the same path `C:\Users\<yourusername>\Documents\R\win-library\3.5\qmra.db\database\qmra-db.accb` (by overwriting the old one!)  
 
 
 ## Dump Content in CSV files 
 
 Finally please run following R code in order to export the whole content: 
 
-```{r database_export_csvfiles, eval=TRUE}
+```{r database_export_csvfiles, eval=FALSE}
 
 qmra.db::dump_access_db(mdb_path)
 
 ```
+```{r eval = FALSE}
+Exporting MS Access Database content into .csv files ... 
+Running SQL: SELECT * FROM tbl_doseResponse  WHERE TRUE
 
+The query returned 37 records with 10 fields: PathogenID,Bestfitmodel,k,alpha,N50,Hosttype,Doseunits,Route,Response,ReferenceID
+
+Running SQL: SELECT * FROM tbl_guideline  WHERE TRUE
+
+The query returned 2 records with 4 fields: GuidelineID,GuidelineName,GuidelineDescription,ReferenceID
+
+Running SQL: SELECT * FROM tbl_health  WHERE TRUE
+
+The query returned 3 records with 4 fields: PathogenID,ReferenceID,infection_to_illness,dalys_per_case
+
+Running SQL: SELECT * FROM tbl_inflow  WHERE TRUE
+
+The query returned 28 records with 11 fields: PathogenID,ReferenceID,WaterSourceID,min,max,distribution,mean,alpha,beta,PathogenInReference,Notes
+
+Running SQL: SELECT * FROM tbl_ingestion  WHERE TRUE
+
+The query returned 8 records with 6 fields: WaterUseID,WaterUseName,WaterUseDescription,events_perYear,litres_perEvent,ReferenceID
+
+Running SQL: SELECT * FROM tbl_logRemoval  WHERE TRUE
+
+The query returned 74 records with 10 fields: TreatmentID,min,max,ReferenceID,PathogenGroupID,mean,alpha,beta,distribution,Notes
+
+Running SQL: SELECT * FROM tbl_pathogen  WHERE TRUE
+
+The query returned 37 records with 4 fields: PathogenID,PathogenName,PathogenDescription,PathogenGroupID
+
+Running SQL: SELECT * FROM tbl_pathogenGroup  WHERE TRUE
+
+The query returned 3 records with 4 fields: PathogenGroupID,PathogenGroup,PathogenGroupDescription,DefaultPathogenID
+
+Running SQL: SELECT * FROM tbl_reference  WHERE TRUE
+
+The query returned 50 records with 3 fields: ReferenceID,ReferenceName,ReferenceLink
+
+Running SQL: SELECT * FROM tbl_treatment  WHERE TRUE
+
+The query returned 28 records with 4 fields: TreatmentID,TreatmentName,TreatmentGroup,TreatmentDescription
+
+Running SQL: SELECT * FROM tbl_waterSource  WHERE TRUE
+
+The query returned 8 records with 3 fields: WaterSourceID,WaterSourceName,WaterSourceDescription
+
+Running SQL: SELECT * FROM qry_treatmentRemovals  WHERE TRUE
+
+The query returned 74 records with 7 fields: TreatmentGroup,TreatmentName,PathogenGroup,Min,Max,ReferenceName,ReferenceLink
+ok. (7.26s) 
+```
 ## Create ZIP File 
 
 Create a zip file `qmra-db.zip` with the following content: 
@@ -108,11 +162,14 @@ subdirectory **qmra-db_accdb/**)
 
 
 
-```{r database_export_zipfile, eval=TRUE}
+```{r database_export_zipfile, eval=FALSE}
 
 zip_path <- qmra.db::create_zipfile(mdb_path)
 cat(zip_path)
 
+```
+```{r eval = FALSE}
+C:\Users\<yourusername>\Documents\R\win-library\3.5\qmra.db\database\qmra-db.zip
 ```
 
 ## Suggest Your Changes on GitHub 
