@@ -36,11 +36,11 @@ remotes::install_github("r-lib/remotes@18c7302637053faf21c5b025e1e9243962db1bdc"
 
 ### 2.1 Specific Release ACCESS DB from our GitHub account, e.g.
 
-#remotes::install_github("kwb-r/qmra.db@0.9.0")
+remotes::install_github("kwb-r/qmra.db@0.9.0")
 
 ### 2.2 the Latest Development Version 
 
-remotes::install_github("kwb-r/qmra.db") 
+#remotes::install_github("kwb-r/qmra.db") 
 
 ```
 
