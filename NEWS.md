@@ -1,4 +1,4 @@
-# [qmra.db 0.9.0](https://github.com/KWB-R/qmra.db/) <small>unreleased</small>
+# [qmra.db 0.9.0](https://github.com/KWB-R/qmra.db/releases/tag/v0.9.0) <small>2019-02-21</small>
 
 **BREAKING CHANGES**: ***due to converting repo as R package***
 
