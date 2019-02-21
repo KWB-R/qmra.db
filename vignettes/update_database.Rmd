@@ -177,7 +177,7 @@ C:\Users\<yourusername>\Documents\R\win-library\3.5\qmra.db\database\qmra-db.zip
 In case that changes are suggested for the MS ACCESS database the following 
 workflow is proposed: 
 
-- Create a new issue on GitHub at https://github.com/qmra.db/issue with a title 
+- Create a new issue on GitHub at https://github.com/KWB-R/qmra.db/issues with a title 
 starting with **Database Update: <short_description_of_my_changes>** 
 
 - **Upload** the `qmra-db.zip` file (by dragging into the **Comment** field) and 
