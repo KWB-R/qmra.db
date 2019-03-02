@@ -20,6 +20,9 @@ authors:
 template:
   params:
     bootswatch: cerulean
+    docsearch:
+      api_key: b78595f2222cb333e9be8091c62f24f9
+      index_name: kwb_qmra_db
 development:
   mode: auto
 
