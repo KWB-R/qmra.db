@@ -112,6 +112,7 @@ for (i in 1:nrow(treatment_group)) {
     sel_treatment_process_tbl <- treatment %>% 
   dplyr::filter(TreatmentID == dplyr::pull(sel_treatment_process[,"TreatmentID"])) %>% 
     dplyr::select(.data$TreatmentName, 
+                  .data$PathogenGroup,
                   .data$min,
                   .data$max,
                   .data$ReferenceName,
