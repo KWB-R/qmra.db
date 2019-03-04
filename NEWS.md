@@ -1,5 +1,8 @@
 # [qmra.db 0.9.0.9000](https://github.com/KWB-R/qmra.db) <small>unreleased</small>
 
+* add vignette for checking database content and add new function 
+import_database_content() for importing the content into R ([#5](https://github.com/KWB-R/qmra.db/issues/5)) 
+
 * made qmra.db public and build documentation in gh-pages (and use Gitlab only 
 as backup)
 
@@ -34,7 +37,7 @@ R package.
 
 tbl_inflow: 
 
-* Use "log10_norm" as default for all data entries (instead of "uniform") in MS ACCESS DB  and export csv files (#2), which is now 
+* Use "log10_norm" as default for all data entries (instead of "uniform") in MS ACCESS DB  and export csv files ([#2](https://github.com/KWB-R/qmra.db/issues/2)), which is now 
 implemented in R package [kwb.qmra](https://github.com/kwb-r/kwb.qmra) (see [issue #14](https://github.com/KWB-R/kwb.qmra/issues/14) and [issue #17](https://github.com/KWB-R/kwb.qmra/issues/17))
 
 
