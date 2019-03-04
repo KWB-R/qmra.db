@@ -1,0 +1,202 @@
+---
+title: "Check Database Content"
+author: "Michael Rustler"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Check Database Content}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE,message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(qmra.db)
+db_content <- qmra.db::import_database_content()
+
+
+```
+
+
+
+```{r pathogen_groups, echo = FALSE, results ='asis'}
+
+health <- db_content$health
+
+cat("\n# Pathogen Groups  \n\n")
+
+for (i in 1:nrow(health )) {
+
+  sel_health <- health[i,]
+  
+cat(sprintf("\n## %s (%s)\n\n%s\n\n", 
+        sel_health$PathogenGroup, 
+        sel_health$PathogenName,
+        sel_health$PathogenGroupDescription))
+}
+```
+
+
+```{r inflow, echo = FALSE, results ='asis'}
+inflow <- db_content$inflow %>% 
+ dplyr::filter(PathogenID %in% dplyr::pull(health[,"PathogenID"]))
+
+water_sources_inflow <- inflow %>% 
+  dplyr::count(.data$WaterSourceID,
+               .data$WaterSourceName, 
+               .data$WaterSourceDescription) 
+
+cat("\n\n\n# Inflow\n")
+
+for (i in 1:nrow(water_sources_inflow)) {
+
+  sel_source <- water_sources_inflow[i,]
+  
+  sel_inflow_tbl <- inflow %>% 
+    dplyr::filter(WaterSourceID == water_sources_inflow$WaterSourceID[i]) %>% 
+    dplyr::select(.data$WaterSourceName,
+                  .data$PathogenGroup, 
+                  .data$PathogenName, 
+                  .data$min, 
+                  .data$max, 
+                  .data$ReferenceName,
+                  .data$distribution)
+  
+cat(sprintf("\n## %s\n\n%s\n\n", 
+        sel_source$WaterSourceName, 
+        sel_source$WaterSourceDescription))
+
+print(knitr::kable(sel_inflow_tbl))
+
+}
+
+
+```
+
+```{r treatment, echo = FALSE, results ='asis'}
+treatment <- db_content$treatment
+
+
+cat("\n\n\n# Treatment\n")
+
+
+treatment_group <- treatment %>% 
+  dplyr::count(.data$TreatmentGroup)
+
+
+
+
+
+for (i in 1:nrow(treatment_group)) {
+
+  sel_treatment_group <- dplyr::pull(treatment_group[i,"TreatmentGroup"])
+
+  
+  cat(sprintf("\n\n## %s\n", sel_treatment_group))
+  
+  treatment_processes <- treatment %>% 
+  dplyr::count(.data$TreatmentID, 
+               .data$TreatmentGroup,
+               .data$TreatmentName, 
+               .data$TreatmentDescription) %>%  
+  dplyr::filter(TreatmentGroup == sel_treatment_group)
+
+  for (j in 1:nrow(treatment_processes)) {
+    
+    sel_treatment_process <- treatment_processes[j,]
+    
+    sel_treatment_process_tbl <- treatment %>% 
+  dplyr::filter(TreatmentID == dplyr::pull(sel_treatment_process[,"TreatmentID"])) %>% 
+    dplyr::select(.data$TreatmentName, 
+                  .data$min,
+                  .data$max,
+                  .data$ReferenceName,
+                  .data$distribution)
+    
+    cat(sprintf("\n### %s\n\n%s\n\n", 
+        sel_treatment_process$TreatmentName, 
+        sel_treatment_process$TreatmentDescription))
+    
+    
+  print(knitr::kable(sel_treatment_process_tbl))
+    
+  }
+
+
+
+}
+
+```
+
+
+
+```{r ingestion, echo = FALSE, results ='asis'}
+ingestion <- db_content$ingestion
+
+
+cat("\n\n\n# Ingestion\n")
+
+
+for (i in 1:nrow(ingestion)) {
+
+  sel_ingestion <- ingestion[i,]
+  
+  sel_ingestion_tbl <- sel_ingestion %>% 
+    dplyr::select(.data$WaterUseName, 
+                  .data$events_perYear,
+                  .data$litres_perEvent,
+                  .data$ReferenceName) 
+  cat(sprintf("\n## %s\n\n%s\n\n", 
+        sel_ingestion$WaterUseName, 
+        sel_ingestion$WaterUseDescription))
+  
+  print(knitr::kable(sel_ingestion_tbl))
+}
+
+```
+
+
+# Dose-Response 
+
+```{r dose_response, echo = FALSE, results ='asis'}
+
+dose_response_tbl <- db_content$dose_response %>% 
+ dplyr::filter(PathogenID %in% dplyr::pull(health[,"PathogenID"])) %>% 
+ dplyr::select(.data$PathogenGroup,
+               .data$PathogenName, 
+               .data$Bestfitmodel,
+               .data$k,
+               .data$alpha,
+               .data$N50, 
+               # .data$Hosttype,
+               # .data$Doseunits,
+               # .data$Route,
+               # .data$Response,
+               .data$ReferenceName)
+
+knitr::kable(dose_response_tbl)
+
+```
+
+# Health 
+
+```{r health_tbl, echo = FALSE, results='as.is'}
+
+health_tbl <- db_content$health %>% 
+  dplyr::select(.data$PathogenGroup, 
+                .data$PathogenName,
+                .data$infection_to_illness, 
+                .data$dalys_per_case, 
+                .data$ReferenceName)
+
+knitr::kable(health_tbl)
+
+```
+
+
+
+

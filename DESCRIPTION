@@ -28,17 +28,21 @@ Description: This package contains a MS ACCESS database
     with data required for performing Quantitative Microbiological Risk
     Assessment (QMRA). In addition it provides also R functions for
     exporting these data into .csv files or a single ZIP file (together
-    with the MS Access database)
+    with the MS Access database).
 License: MIT + file LICENSE
 URL: https://github.com/KWB-R/qmra.db
 BugReports: https://github.com/KWB-R/qmra.db/issues
 Imports: 
+    dplyr,
     fs,
     kwb.db,
     kwb.utils,
+    readr,
+    rlang,
     stringr,
     withr,
-    zip
+    zip,
+    magrittr
 Suggests: 
     covr,
     knitr,

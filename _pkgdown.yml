@@ -32,6 +32,8 @@ navbar:
   left:
   - text: Update Database
     href: articles/update_database.html
+  - text: Database Content
+    href: articles/database_content.html
   - text: News
     href: news/index.html
   - text: Reference
@@ -45,6 +47,14 @@ reference:
     contents: 
       - create_zipfile
       - dump_access_db
+
+  - title: Import Database Content
+    desc: >
+      Function to import exported database content from .csv files into list in 
+      order to create vignette "database_content.Rmd" (for checking database 
+      content)
+    contents: 
+      - import_database_content
 
   - title: Helper Functions
     desc: >

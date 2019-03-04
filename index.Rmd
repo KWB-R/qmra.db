@@ -19,6 +19,9 @@ information on the following topics:
     database? How to export these? And how can these modifications be proposed
     to the database maintainers?
     
+    + [Check Database Content](articles/database_content.html): overview of 
+    current database content (based on exported database content into .csv files)
+    
     + [NEWS](news.html): for keeping track what has changed (database / R functions)
     and 
     
