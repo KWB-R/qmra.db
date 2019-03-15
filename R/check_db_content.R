@@ -8,7 +8,7 @@
 #' @importFrom kwb.utils resolve
 #' @importFrom rlang .data
 #' @importFrom dplyr arrange left_join mutate n select 
-#' @importFrom readr read_csv
+#' @importFrom readr locale read_csv
 #' @examples
 #' \dontrun{
 #' db_content <- import_database_content()
@@ -38,7 +38,7 @@ import_database_content <- function(
   
   read_exported_csv <- function (file) {
     readr::read_csv(file = file, 
-                    locale = locale(encoding = encoding)
+                    locale = readr::locale(encoding = encoding)
                     )
   }
   
