@@ -5,11 +5,13 @@
 \title{Import Database Content From CSV Files}
 \usage{
 import_database_content(csv_dir = system.file("database/qmra-db_accdb",
-  package = "qmra.db"))
+  package = "qmra.db"), encoding = "WINDOWS-1252")
 }
 \arguments{
 \item{csv_dir}{path to csv directory with database output (default: 
 system.file("database/qmra-db_accdb", package = "qmra.db"))}
+
+\item{encoding}{encoding of csv files (default: "WINDOWS-1252")}
 }
 \value{
 list with multiple data.frames with database content

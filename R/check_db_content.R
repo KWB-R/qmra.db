@@ -2,6 +2,7 @@
 #'
 #' @param csv_dir path to csv directory with database output (default: 
 #'  system.file("database/qmra-db_accdb", package = "qmra.db"))
+#' @param encoding encoding of csv files (default: "WINDOWS-1252")
 #' @return list with multiple data.frames with database content
 #' @export
 #' @importFrom kwb.utils resolve
@@ -14,7 +15,8 @@
 #' str(db_content, 1)
 #' }
 import_database_content <- function(
-  csv_dir = system.file("database/qmra-db_accdb", package = "qmra.db")) {
+  csv_dir = system.file("database/qmra-db_accdb", package = "qmra.db"),
+  encoding = "WINDOWS-1252") {
   
   paths_list <- list(
     csv_dir = system.file("database/qmra-db_accdb", package = "qmra.db"),
@@ -34,16 +36,22 @@ import_database_content <- function(
   paths <- kwb.utils::resolve(paths_list)
   
   
-  dose_response <- readr::read_csv(file = paths$dose_response)
-  guideline <- readr::read_csv(file = paths$guideline)
-  health <- readr::read_csv(file = paths$health)
-  inflow <- readr::read_csv(file = paths$inflow)
-  ingestion <- readr::read_csv(file = paths$ingestion)
-  log_removal <- readr::read_csv(file = paths$log_removal)
-  pathogen <- readr::read_csv(file = paths$pathogen)
-  pathogen_group <- readr::read_csv(file = paths$pathogen_group)
-  treatment <- readr::read_csv(file = paths$treatment)
-  references <- readr::read_csv(file = paths$references)
+  read_exported_csv <- function (file) {
+    readr::read_csv(file = file, 
+                    locale = locale(encoding = encoding)
+                    )
+  }
+  
+  dose_response <- read_exported_csv(file = paths$dose_response)
+  guideline <- read_exported_csv(file = paths$guideline)
+  health <- read_exported_csv(file = paths$health)
+  inflow <- read_exported_csv(file = paths$inflow)
+  ingestion <- read_exported_csv(file = paths$ingestion)
+  log_removal <- read_exported_csv(file = paths$log_removal)
+  pathogen <- read_exported_csv(file = paths$pathogen)
+  pathogen_group <- read_exported_csv(file = paths$pathogen_group)
+  treatment <- read_exported_csv(file = paths$treatment)
+  references <- read_exported_csv(file = paths$references)
   water_source <- readr::read_csv(file = paths$water_source)
   
   references <-   references %>% 
