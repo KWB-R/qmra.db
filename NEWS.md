@@ -1,10 +1,13 @@
-# [qmra.db 0.9.0.9000](https://github.com/KWB-R/qmra.db) <small>unreleased</small>
+# [qmra.db 0.10.0](https://github.com/KWB-R/qmra.db/releases/tag/v0.10.0) <small>2019-07-17</small>
+
+Prepare for first release on [KWB community on Zenodo](https://zenodo.org/communities/kwb/):
 
 * add vignette for checking database content and add new function 
 import_database_content() for importing the content into R ([#5](https://github.com/KWB-R/qmra.db/issues/5)) 
 
 * made qmra.db public and build documentation in gh-pages (and use Gitlab only 
 as backup)
+
 
 # [qmra.db 0.9.0](https://github.com/KWB-R/qmra.db/releases/tag/v0.9.0) <small>2019-02-21</small>
 
