@@ -3,6 +3,7 @@
 [![codecov](https://codecov.io/github/KWB-R/qmra.db/branch/master/graphs/badge.svg)](https://codecov.io/github/KWB-R/qmra.db)
 [![Project Status](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/qmra.db)]()
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3339321.svg)](https://doi.org/10.5281/zenodo.3339321)
 
 # qmra.db
 
