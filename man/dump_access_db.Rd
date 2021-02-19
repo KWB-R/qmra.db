@@ -4,8 +4,12 @@
 \alias{dump_access_db}
 \title{Dump MS ACCESS Database To Csv Files}
 \usage{
-dump_access_db(db_path = default_access_db(),
-  target_dir = default_target_dir(db_path), dbg = TRUE, ...)
+dump_access_db(
+  db_path = default_access_db(),
+  target_dir = default_target_dir(db_path),
+  dbg = TRUE,
+  ...
+)
 }
 \arguments{
 \item{db_path}{path to MS Access DB (default: default_access_db())}
