@@ -1,7 +1,8 @@
-pandoc: '2.2'
-pkgdown: 1.4.0
+pandoc: 2.7.3
+pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   database_content: database_content.html
   update_database: update_database.html
+last_built: 2021-02-19T15:54Z
 

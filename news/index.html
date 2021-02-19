@@ -10,23 +10,27 @@
 
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cerulean/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -35,7 +39,7 @@
 
 <!-- docsearch -->
 <script src="../docsearch.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
 <link href="../docsearch.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
@@ -59,7 +63,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -94,8 +98,8 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/KWB-R/qmra.db">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/KWB-R/qmra.db/">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -118,13 +122,13 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Changelog <small></small></h1>
+      <h1 data-toc-skip>Changelog <small></small></h1>
       <small>Source: <a href='https://github.com/KWB-R/qmra.db/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div id="qmra-db-0-10-0-2019-07-17" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-10-0-2019-07-17" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.10.0">qmra.db 0.10.0</a> <small>2019-07-17</small>
+    <div id="qmradb-0100-2019-07-17" class="section level1">
+<h1 class="page-header" data-toc-text="0.10.0">
+<a href="#qmradb-0100-2019-07-17" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.10.0">qmra.db 0.10.0</a> <small>2019-07-17</small>
 </h1>
 <p>Prepare for first release on <a href="https://zenodo.org/communities/kwb/">KWB community on Zenodo</a>:</p>
 <ul>
@@ -132,9 +136,9 @@
 <li><p>made qmra.db public and build documentation in gh-pages (and use Gitlab only as backup)</p></li>
 </ul>
 </div>
-    <div id="qmra-db-0-9-0-2019-02-21" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-9-0-2019-02-21" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.9.0">qmra.db 0.9.0</a> <small>2019-02-21</small>
+    <div id="qmradb-090-2019-02-21" class="section level1">
+<h1 class="page-header" data-toc-text="0.9.0">
+<a href="#qmradb-090-2019-02-21" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.9.0">qmra.db 0.9.0</a> <small>2019-02-21</small>
 </h1>
 <p><strong>BREAKING CHANGES</strong>: <strong><em>due to converting repo as R package</em></strong></p>
 <p>Moved from <a href="https://github.com/KWB-R/qmra.db/tree/master/">/</a> into <a href="https://github.com/KWB-R/qmra.db/tree/master/inst">/inst/database</a> directory (required for R Package):</p>
@@ -163,9 +167,9 @@
 <li><p>see <a href="https://style.tidyverse.org/news.html" class="uri">https://style.tidyverse.org/news.html</a> for writing a good <code>NEWS.md</code></p></li>
 </ul>
 </div>
-    <div id="qmra-db-0-8-0-2018-11-12" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-8-0-2018-11-12" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.8.0">qmra.db 0.8.0</a> <small>2018-11-12</small>
+    <div id="qmradb-080-2018-11-12" class="section level1">
+<h1 class="page-header" data-toc-text="0.8.0">
+<a href="#qmradb-080-2018-11-12" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.8.0">qmra.db 0.8.0</a> <small>2018-11-12</small>
 </h1>
 <p>“rawdata” folder:</p>
 <ul>
@@ -181,9 +185,9 @@
 <li>deleted entries for TreatmentID 15 (RO) from WHO (2011) (Reference: 8), now default RO data are based on NSF/ANSI 419 validation (referenceID = 47)</li>
 </ul>
 </div>
-    <div id="qmra-db-0-7-1-2018-10-11" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-7-1-2018-10-11" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.7.1">qmra.db 0.7.1</a> <small>2018-10-11</small>
+    <div id="qmradb-071-2018-10-11" class="section level1">
+<h1 class="page-header" data-toc-text="0.7.1">
+<a href="#qmradb-071-2018-10-11" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.7.1">qmra.db 0.7.1</a> <small>2018-10-11</small>
 </h1>
 <p>tbl_treatment:</p>
 <ul>
@@ -196,9 +200,9 @@
 <li>deleted entries for TreatmentID 6 from WHO (2011)</li>
 </ul>
 </div>
-    <div id="qmra-db-0-7-0-2018-10-09" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-7-0-2018-10-09" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.7.0">qmra.db 0.7.0</a> <small>2018-10-09</small>
+    <div id="qmradb-070-2018-10-09" class="section level1">
+<h1 class="page-header" data-toc-text="0.7.0">
+<a href="#qmradb-070-2018-10-09" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.7.0">qmra.db 0.7.0</a> <small>2018-10-09</small>
 </h1>
 <p>tbl_treatment: renamed treatment processes</p>
 <ul>
@@ -231,7 +235,7 @@
 PathogenInReference, Notes</p></li>
 <li><p>added only data values for mean, alpha, beta in cases these are either not to be assumed the same as min/max (i.e. for<br>
 alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
-<li>distribution: is set to “uniform” (as default)</li>
+<li><p>distribution: is set to “uniform” (as default)</p></li>
 </ul>
 </li>
 <li><p>added raw data (used for updating DB) to sub-folder: rawdata/tbl_inflow_181008.xlsx</p></li>
@@ -241,7 +245,7 @@ alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
 <li>added corrected data (PathogenGroupID!) from <a href='https://github.com/PatrickSmeetsKWR'>@PatrickSmeetsKWR</a>`s EXCEL file (tbl_logRemoval_181008.xlsx):
 <ul>
 <li>new columns: mean, alpha, beta, distribution, Notes</li>
-<li>no data values entered for mean, alpha, beta as these are either are always to be assumed the same as min/max (i.e. alpha/beta) or calculated, i.e. mean = (min+max)/2</li>
+<li>no data values entered for mean, alpha, beta as these are either are always to be assumed the same as min/max (i.e. alpha/beta) or calculated, i.e.  mean = (min+max)/2</li>
 <li>distribution: is set to “uniform” (as default)</li>
 </ul>
 </li>
@@ -249,9 +253,9 @@ alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
 <li>bugfix: corrected wrong ReferenceID for DEMOWARE reference</li>
 </ul>
 </div>
-    <div id="qmra-db-0-6-1-2018-09-26" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-6-1-2018-09-26" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.6.1">qmra.db 0.6.1</a> <small>2018-09-26</small>
+    <div id="qmradb-061-2018-09-26" class="section level1">
+<h1 class="page-header" data-toc-text="0.6.1">
+<a href="#qmradb-061-2018-09-26" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.6.1">qmra.db 0.6.1</a> <small>2018-09-26</small>
 </h1>
 <p>tbl_pathogenGroup:</p>
 <ul>
@@ -259,9 +263,9 @@ alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
 </ul>
 <p>conversion of ACCESS mdb to mySQL: <a href="https://dev.mysql.com/doc/workbench/en/wb-migration-database-access.html" class="uri">https://dev.mysql.com/doc/workbench/en/wb-migration-database-access.html</a></p>
 </div>
-    <div id="qmra-db-0-6-unreleased" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-6-unreleased" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/commit/b30e91c65dbe0134402c143e16b365b23c629401">qmra.db 0.6</a> <small>unreleased</small>
+    <div id="qmradb-06-unreleased" class="section level1">
+<h1 class="page-header" data-toc-text="0.6">
+<a href="#qmradb-06-unreleased" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/commit/b30e91c65dbe0134402c143e16b365b23c629401">qmra.db 0.6</a> <small>unreleased</small>
 </h1>
 <p>Based on v0.4 after integrating most modifications performed by <a href='https://github.com/PatrickSmeetsKWR'>@PatrickSmeetsKWR</a> in v0.5 but without rename/deletion of currently unneeded pathogens from multiple MS ACCESS tables.</p>
 <p>tbl_pathogenGroup: added a new column “DefaultPathogenID” which contains a default PathogenID (see look-up table “tbl_pathogen”) for each pathogen group. Current defaults are:</p>
@@ -279,9 +283,9 @@ alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
 <li><p>tbl_exposure: renamed to “tbl_ingestion” as proposed by <a href='https://github.com/PatrickSmeetsKWR'>@PatrickSmeetsKWR</a></p></li>
 </ul>
 </div>
-    <div id="qmra-db-0-5-2018-09-23" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-5-2018-09-23" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.5">qmra.db 0.5</a> <small>2018-09-23</small>
+    <div id="qmradb-05-2018-09-23" class="section level1">
+<h1 class="page-header" data-toc-text="0.5">
+<a href="#qmradb-05-2018-09-23" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.5">qmra.db 0.5</a> <small>2018-09-23</small>
 </h1>
 <p>Based on v0.4 (changes by <a href='https://github.com/PatrickSmeetsKWR'>@PatrickSmeetsKWR</a>):</p>
 <p>tbl_inflow Added new parameters to allow for stochastic distribution parameters to be entered “distribution”= the type of stochastic distribution to describe uncertainty about mean concentration “alpha” “beta” = the parameters of this distribution, assuming that no more than two parameter distributions will be used. e.g. with normal distribution alpha is the mean and beta is the standard deviation</p>
@@ -301,9 +305,9 @@ alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
 </ul>
 <p>Note that we allow only one intended use, for other applications the user needs to do a separate run of the model</p>
 </div>
-    <div id="qmra-db-0-4-2018-09-14" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-4-2018-09-14" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.4">qmra.db 0.4</a> <small>2018-09-14</small>
+    <div id="qmradb-04-2018-09-14" class="section level1">
+<h1 class="page-header" data-toc-text="0.4">
+<a href="#qmradb-04-2018-09-14" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.4">qmra.db 0.4</a> <small>2018-09-14</small>
 </h1>
 <p>Based on v0.3</p>
 <p>Added new parameter “…Description” in the following tables:</p>
@@ -317,9 +321,9 @@ alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
 </ul>
 <p>Updated DB structure overview with new parameter</p>
 </div>
-    <div id="qmra-db-0-3-2018-09-07" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-3-2018-09-07" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.3">qmra.db 0.3</a> <small>2018-09-07</small>
+    <div id="qmradb-03-2018-09-07" class="section level1">
+<h1 class="page-header" data-toc-text="0.3">
+<a href="#qmradb-03-2018-09-07" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.3">qmra.db 0.3</a> <small>2018-09-07</small>
 </h1>
 <p>Status after internal QA with DB expert <a href='https://github.com/hsonne'>@hsonne</a>:</p>
 <ul>
@@ -330,9 +334,9 @@ alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
 </ul>
 <p>ACCESS table names for each step</p>
 </div>
-    <div id="qmra-db-0-2-2018-08-31" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-2-2018-08-31" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.2">qmra.db 0.2</a> <small>2018-08-31</small>
+    <div id="qmradb-02-2018-08-31" class="section level1">
+<h1 class="page-header" data-toc-text="0.2">
+<a href="#qmradb-02-2018-08-31" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.2">qmra.db 0.2</a> <small>2018-08-31</small>
 </h1>
 <p>Based on v0.1</p>
 <ul>
@@ -340,33 +344,19 @@ alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
 <li>slightly modified MS ACCESS tables manually (e.g. defining “key” columns)</li>
 </ul>
 </div>
-    <div id="qmra-db-0-1-2018-07-05" class="section level1">
-<h1 class="page-header">
-<a href="#qmra-db-0-1-2018-07-05" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.2">qmra.db 0.1</a> <small>2018-07-05</small>
+    <div id="qmradb-01-2018-07-05" class="section level1">
+<h1 class="page-header" data-toc-text="0.1">
+<a href="#qmradb-01-2018-07-05" class="anchor"></a><a href="https://github.com/KWB-R/qmra.db/releases/tag/v0.2">qmra.db 0.1</a> <small>2018-07-05</small>
 </h1>
 <p>MS Access database “qrma-db.accdb” generated with R script “db-initialGeneration.R” containing first draft of MS ACCESS database and R script using data from Old Ford Public Irrigation scenario for generating and exporting the tables to ACCESS</p>
 <p>All tables/queries in DB are exported with R script “db-export.R” as .csv files into subfolder “qmra-db_accdb”</p>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <div id="tocnav">
-      <h2>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li><a href="#qmra-db-0-10-0-2019-07-17">0.10.0</a></li>
-        <li><a href="#qmra-db-0-9-0-2019-02-21">0.9.0</a></li>
-        <li><a href="#qmra-db-0-8-0-2018-11-12">0.8.0</a></li>
-        <li><a href="#qmra-db-0-7-1-2018-10-11">0.7.1</a></li>
-        <li><a href="#qmra-db-0-7-0-2018-10-09">0.7.0</a></li>
-        <li><a href="#qmra-db-0-6-1-2018-09-26">0.6.1</a></li>
-        <li><a href="#qmra-db-0-6-unreleased">0.6</a></li>
-        <li><a href="#qmra-db-0-5-2018-09-23">0.5</a></li>
-        <li><a href="#qmra-db-0-4-2018-09-14">0.4</a></li>
-        <li><a href="#qmra-db-0-3-2018-09-07">0.3</a></li>
-        <li><a href="#qmra-db-0-2-2018-08-31">0.2</a></li>
-        <li><a href="#qmra-db-0-1-2018-07-05">0.1</a></li>
-      </ul>
-    </div>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 
 </div>
@@ -378,7 +368,7 @@ alpha/beta) or not calcululated i.e. mean = (min+max)/2</p></li>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
