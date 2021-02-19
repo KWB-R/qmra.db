@@ -4,8 +4,10 @@
 \alias{import_database_content}
 \title{Import Database Content From CSV Files}
 \usage{
-import_database_content(csv_dir = system.file("database/qmra-db_accdb",
-  package = "qmra.db"), encoding = "WINDOWS-1252")
+import_database_content(
+  csv_dir = system.file("database/qmra-db_accdb", package = "qmra.db"),
+  encoding = "WINDOWS-1252"
+)
 }
 \arguments{
 \item{csv_dir}{path to csv directory with database output (default: 
